@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Sam's Curriculam Vitae</title>
+    <style>
+        body
+        {   
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+          }
+
+          #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+          }
+        .container_comm
+        {   position: relative;
+            font-family: 'Montserrat';
+            font-size: 22px;
+            font-weight:bold;        
+            border: 1px solid #000;   
+            background-color: rgb(167, 207, 245);
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+            max-width: 60%;
+            height: auto;
+            left: 20%;
+            box-sizing: border-box;
+            margin-bottom: 50px;
+        }
+        .container_blue
+        {
+            max-height: 50px;
+            border: 10px;
+            margin: 1px 0;
+            border-top-left-radius: 10%;
+            border-style: none;
+            background-color: blue;
+        }
+        .container_pack
+        {
+            position: relative; 
+            align-content: space-between;
+            border:1px;
+            display: flex;
+            width: auto;
+            flex-direction: row;
+            transition: transform .9s;
+            padding: 2px ;
+            display: flex;
+            align-items: center;
+            margin: 0 5px;
+           
+        }
+        .container_left
+        {
+            border:1px;
+            width: 40%;
+            text-align: left;  
+            left:1px;              
+        }
+        .container_center
+        {
+            border:1px;    
+            width: 10%;
+            text-align: center;          
+        }
+        .container_right
+        {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+            border:1px; 
+            right:-1%;
+            text-align: right;    
+            width: 40%;    
+        }
+        ._img
+        {
+            position: relative;
+            align-items: left;
+            left:10px;
+            top:10px;
+            border-radius: 100%;
+            width: 200px;
+        }
+        ._img_logo
+        {
+            position: relative;
+            align-items: left;
+            top:18px;
+            border:1px;
+            width: 40px;
+        }
+        .container_contacts {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+            border: 0px;
+            border-style: dotted;
+            border-color: #000;
+            width: 100%;
+            right:1px;
+            height: auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        .contact_item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .container_table
+        {
+            position: relative;
+            font-family: 'Montserrat';
+            font-size: 22px;
+            font-weight:bold;        
+            transition: transform .2s;
+            border: 5px solid #000;   
+            background-color: rgba(255, 238, 127, 0.559);     
+            max-width: auto;
+            height: auto;
+            box-sizing: border-box;
+        }
+
+
+        .flip-card {
+            background-color: transparent;
+            position: relative;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+            left:25%;
+            top:10px;
+            
+          }
+          
+          .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+          }
+          
+          .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+          }
+          
+          .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            
+          }
+          
+          .flip-card-front {
+            background-color: #bbb;
+            color: black;
+          }
+          
+          .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+          }
+
+          .container_pack:hover
+           {
+            transform: scale(1.05);
+            color: blue; 
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            border-radius: 20px;
+          }
+
+
+    </style>
+    <body>
+        <video autoplay muted loop id="myVideo">
+            <source src="background_video.mp4" type="video/mp4">
+          </video>
+
+        
+        <div class="container_comm">
+            <h1 style="font-family: 'Montserrat';">Personal Details</h1>
+            <div class="container_blue">
+            </div>
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://drive.google.com/thumbnail?id=1Tl5k6_hNv81JGN_A2UK9vLmYrcQSYCC2" alt="Sam Charles" style="width:300px;height:300px;border-radius:5%">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Sam Charles</h1> 
+                    <p>Electronics and Communication Engineer</p> 
+                    <p>-Enthusiastic and Passionate on Engineering</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+           
+            <div class="container_pack">
+                <p class="container_left">Name </p>
+                <p class="container_center">: </p>
+                <p class="container_right">Sam Charles J </p>
+            </div>
+
+            <div class="container_pack">
+                <p class="container_left">Designation </p>
+                <p class="container_center">: </p>
+                <p class="container_right">BE- Electronics and Communication Engineering</p>
+            </div>
+
+            <div class="container_pack">
+                <p class="container_left">Date of Birth </p>
+                <p class="container_center">: </p>
+                <p class="container_right">11-December-2003</p>
+            </div>
+
+            <div class="container_pack">
+                <p class="container_left">Gender </p>
+                <p class="container_center">: </p>
+                <p class="container_right">Male</p>
+            </div>
+
+            <div class="container_pack">
+                <p class="container_left">Nationality </p>
+                <p class="container_center">: </p>
+                <p class="container_right">India</p>
+            </div>
+
+            <div class="container_pack">
+                <p class="container_left">Place </p>
+                <p class="container_center">: </p>
+                <p class="container_right">24/6, middle Street, Near church, Adaikalapattinam, Tenkasi -627808, Tamil Nadu</p>
+            </div>
+
+            <div class="container_pack">
+                <p class="container_left">Contacts </p>
+                <p class="container_center">: </p>
+                <p class="container_right">
+                    <div class="container_contacts">
+                        <div class="contact_item">
+                            <img class="_img_logo" src="https://drive.google.com/thumbnail?id=1fBdBKe5e9NtxakfQ5Rl7WkS41iWAYsrd" width="auto" height="auto">
+                            <a href="tel:+919003777487">+919003777487</a>
+                        </div>
+                        <div class="contact_item">
+                            <img class="_img_logo"  src="https://drive.google.com/thumbnail?id=1fAj0fteMygFTb2KnjBYnBH-wEPqHlqaU" width="auto" height="auto">
+                            <p><a href="mailto: samcharles290@gmail.com?cc=samcharles290@gmail.com" >samcharles290@gmail.com</a></p>
+                        </div>
+                        <div class="contact_item">
+                            <img class="_img_logo" src="https://drive.google.com/thumbnail?id=1fn6XBs9evEUo8AIBxzxAgLuK28uqX50b" width="auto" height="auto">
+                            <a href="https://www.naukri.com/mnjuser/profile?id=&altresid">Sam Charles</a>
+                        </div>
+                        <div class="contact_item">
+                            <img class="_img_logo" src="https://drive.google.com/thumbnail?id=1f1DRAKheJ0H3hPXpDPij3J7TAFBx9r4x" width="auto" height="auto">
+                            <a href="https://www.linkedin.com/in/sam-charles-02b4a1250/">Sam Charles</a>
+                        </div>
+                    </div>
+                </p>
+            </div>
+      
+        </div>
+
+
+
+<div class="container_comm">
+    <div class="container_table">
+        <h1 style="font-family: 'Montserrat';">Educational Details</h1>
+        <table>
+            <tr style="color:brown;">
+              <th>Designation</th>
+              <th>Place</th>
+              <th>Year of Passing</th>
+              <th>Percentage (%)/CGPA</th>
+            </tr>
+            <tr>
+              <td>SSLC</td>
+              <td>Hilton Matric Higher Secondary School</td>
+              <td>2019</td>
+              <td>
+                <a href="https://drive.google.com/file/d/1LCBR_1kckMUaZ_JkUjxckJ0z72aeQreK/view?usp=drive_link">79.2</a>
+              </td>
+            </tr>
+            <tr>
+                <td>HSC</td>
+                <td>Hilton Matric Higher Secondary School</td>
+                <td>2021</td>
+                <td> 
+                    <a href="https://drive.google.com/file/d/1tY1Wq-01c8BaP1fkpBUOmDu_LtlmJQcW/view?usp=sharing">83.86</a>                     
+                </td>
+              </tr>
+            <tr>
+                <td>BE</td>
+                <td>Francis Xavier Engineering College</td>
+                <td>2025</td>
+                <td>7.2</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+<div class="container_comm">
+    <h1 style="font-family: 'Montserrat';">Skill Set</h1>
+    <div class="container_pack">
+        <div class="container_left"><p>Soft Skills</p></div>
+        <div class="container_centert"><p>:</p></div>
+        <div class="container_right">
+            <div class="container_contacts">
+                <div class="container_items">• Dedicated and responsible.</div>
+                <div class="container_items">• Communication and Team Working.</div>
+                <div class="container_items">• Multi-tasking.</div>
+            </div>
+        </div>
+    </div>    
+
+    <div class="container_pack">
+        <div class="container_left"><p>Hard Skills</p></div>
+        <div class="container_centert"><p>:</p></div>
+        <div class="container_right">
+            <div class="container_contacts">
+                <div class="container_items">• Mobile Robotics.</div>
+                <div class="container_items">• Internet of Things.</div>
+                <div class="container_items">• Embedded Systems.</div>
+                <div class="container_items">• Fullstack Development.</div>
+            </div>
+        </div>
+    </div>   
+
+    <div class="container_pack">
+        <div class="container_left"><p>Software Proficiency</p></div>
+        <div class="container_centert"><p>:</p></div>
+        <div class="container_right">
+            <div class="container_contacts">
+                <div class="container_items">• Python</div>
+                <div class="container_items">• Embedded C++</div>
+                <div class="container_items">• Flask Framework</div>
+                <div class="container_items">• HTML, CSS, JavaScript</div>
+                <div class="container_items">• MySQL Database</div>
+            </div>
+        </div>
+    </div>   
+
+    <div class="container_pack">
+        <div class="container_left"><p>Languages Known</p></div>
+        <div class="container_centert"><p>:</p></div>
+        <div class="container_right">
+            <div class="container_contacts">
+                <div class="container_items">• Tamil(Mother Tongue)</div>
+                <div class="container_items">• English</div>
+                <div class="container_items">• Hindi(Vocabulary Only)</div>
+            </div>
+        </div>
+    </div>   
+</div>
+
+
+
+<div class="container_comm">
+    <h1 style="font-family: 'Montserrat';">Projects</h1>
+        <table>
+            <tr style="color:brown;">
+              <th>Project Name</th>
+              <th>Images</th>
+            </tr>
+
+            <tr>
+              <td>AquaBot- Robotic Excellence for Automated Fish Feeding and Water Management in Smart fish farms</td>              
+              <td><img src="https://drive.google.com/thumbnail?id=1gznHQ6aDUlWIQY9QLPTcd65JCB1g6O8O" alt="Sam Charles" style="width:auto;height:auto;border-radius:5%"></td>
+            </tr>
+
+            <tr>
+                <td>IoT Based Water Management System</td>
+                <td>yet to be added!</td>
+            </tr>
+
+            <tr>
+                <td>IoT Based Home Automation System based on WebServer</td>
+                <td>Image</td>             
+            </tr>
+
+            <tr>
+                <td>A Smart system for monitoring and identifying free driving route using IoT</td>
+                <td><img src="https://drive.google.com/thumbnail?id=1hENQlTrHzph7vXWx1wbeEOAqcj_TmQ68" alt="Sam Charles" style="width:auto;height:auto;border-radius:5%"></td>
+            </tr>
+
+            <tr>
+                <td>Design of and Efficient IoT System for poultry farm Management</td>
+                <td><img src="https://drive.google.com/thumbnail?id=1hD506ENy-Vo2lOXNtkaEv78h3t4X0K51" alt="Sam Charles" style="width:auto;height:auto;border-radius:5%"></td>
+            </tr>
+
+            <tr>
+                <td>Agri Rover - An Advanced Robotic Solution for precision farming, Real-Time Monitoring and Decision-Making to address detected field issues using IoT and ML Technologies</td>
+                <td><img src="https://drive.google.com/thumbnail?id=1g0Elg16cghsckoGMJ_AjG8LnKQ39aru4" alt="Sam Charles" style="width:auto;height:auto;border-radius:5%"></td>
+            </tr>
+         
+            <tr>
+                <td>Smart Nav- Body Worn Assitive technology for visually Impaired Navigation</td>
+                <td><img src="https://drive.google.com/thumbnail?id=1iLisvxsNU_mV4VJQm4RSoJGzSzAMoCsO" alt="Sam Charles" style="width:auto;height:auto;border-radius:5%"></td>
+            </tr>
+
+            <tr>
+                <td>IoT-Enabled Francis Xavier Engineering College Bus tracking System</td>
+                <td><img src="https://drive.google.com/thumbnail?id=1g-5psKESvJU_5d8ERVWTwcOo6bBRl0R2" alt="Sam Charles" style="width:auto;height:auto;border-radius:5%"></td>
+            </tr>
+
+            <tr>
+                <td>IoT Based Women Safety Device</td>
+                <td>Image</td>
+            </tr>
+
+            <tr>
+                <td>RFID Based Fracis Xavier Engineering College Canteen token Dispenser(Software)</td>
+                <td>Image</td>
+            </tr>
+
+            <tr>
+                <td>Cursor Movement using Hand Gestures through WebCam(Software)</td>
+                <td>Image</td>
+            </tr>
+
+        </table>
+</div>
+
+
+    </body>
+</head>
+</html>
