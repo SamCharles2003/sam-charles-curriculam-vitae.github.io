@@ -38,9 +38,9 @@
             background-color: rgb(167, 207, 245);
             border-radius: 20px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
-            max-width: 60%;
+            max-width: auto;
             height: auto;
-            left: 20%;
+  
             box-sizing: border-box;
             margin-bottom: 50px;
         }
@@ -132,6 +132,8 @@
         .container_table
         {
             position: relative;
+            display: grid;
+            align-items: center;
             font-family: 'Montserrat';
             font-size: 22px;
             font-weight:bold;        
@@ -150,7 +152,7 @@
             width: 300px;
             height: 300px;
             perspective: 1000px;
-            left:25%;
+            left:40%;
             top:10px;
             
           }
@@ -300,7 +302,7 @@
     <div class="container_table">
         <h1 style="font-family: 'Montserrat';">Educational Details</h1>
         <table>
-            <tr style="color:brown;">
+            <tr style="color:brown;text-align:center;">
               <th>Designation</th>
               <th>Place</th>
               <th>Year of Passing</th>
@@ -382,7 +384,7 @@
             <div class="container_contacts">
                 <div class="container_items">• Tamil(Mother Tongue)</div>
                 <div class="container_items">• English</div>
-                <div class="container_items">• Hindi(Vocabulary Only)</div>
+                <div class="container_items">• Hindi(illiterate)</div>
             </div>
         </div>
     </div>   
@@ -396,64 +398,78 @@
             <tr style="color:brown;">
               <th>Project Name</th>
               <th>Images</th>
+              <th>Source Link</th>
             </tr>
 
             <tr>
-              <td>AquaBot- Robotic Excellence for Automated Fish Feeding and Water Management in Smart fish farms</td>              
+              <td><a href="https://drive.google.com/file/d/1iIZEktVAtUEA9Od5YSacUK9MaCcq7AdE/view?usp=sharing"> AquaBot- Robotic Excellence for Automated Fish Feeding and Water Management in Smart fish farms</a></td>              
               <td><img src="https://drive.google.com/thumbnail?id=1gznHQ6aDUlWIQY9QLPTcd65JCB1g6O8O" alt="Sam Charles" style="width:auto;height:auto;border-radius:5%"></td>
+              <td><a href="https://github.com/SamCharles2003/IoT-based-Smart-floatable-feeder-for-domestic-fish-farm">GitHub</a></td>
             </tr>
 
             <tr>
                 <td>IoT Based Water Management System</td>
                 <td>yet to be added!</td>
+                <td><a href="https://github.com/SamCharles2003/Auto-water-pump-controller-using-arduino">GitHub</a></td>
             </tr>
 
             <tr>
-                <td> IoT-Based Home Automation System based on WebServer</td>
-                <td><img src="https://drive.google.com/thumbnail?id=1kCuYqJjDxW6kvYT5FkjLOKs3ZnEns9Ka" alt="Sam Charles" style="width:auto;height:auto;border-radius:5%"></td>             
+                
+                <td><a href="https://drive.google.com/file/d/1ad_6HKtUTJsZfHRdeHyaqBeJ2lxx03yf/view?usp=sharing">IoT Based Home Automation System Using WebServer</a></td>
+                <td><img src="https://drive.google.com/thumbnail?id=1kCuYqJjDxW6kvYT5FkjLOKs3ZnEns9Ka" alt="Sam Charles" style="width:auto;height:auto;border-radius:5%"></td>     
+                <td><a href="https://github.com/SamCharles2003/Home-Automation-using-ESP8266-as-AccessPoint-">GitHub</a></td>        
             </tr>
 
             <tr>
-                <td>A Smart system for monitoring and identifying free driving route using IoT</td>
+                <td><a href="https://drive.google.com/file/d/1tNHiscuFyN02TerH6rllZJeuG2xdhgk0/view?usp=sharing">A Smart system for monitoring and identifying free driving route using IoT</a></td>
                 <td><img src="https://drive.google.com/thumbnail?id=1hENQlTrHzph7vXWx1wbeEOAqcj_TmQ68" alt="Sam Charles" style="width:auto;height:auto;border-radius:5%"></td>
+                <td><a href="https://github.com/SamCharles2003/IOT-Based-Air-Pollution-monitoring-and-mapping-system">GitHub</a></td>
             </tr>
 
             <tr>
-                <td>Design of an Efficient IoT System for Poultry Farm Management</td>
+                <td><a href="https://drive.google.com/file/d/1tt-k93h6RGYbzODiyiDmLK4raBzeos07/view?usp=sharing">Design of and Efficient IoT System for poultry farm Management</a></td>
                 <td><img src="https://drive.google.com/thumbnail?id=1hD506ENy-Vo2lOXNtkaEv78h3t4X0K51" alt="Sam Charles" style="width:auto;height:auto;border-radius:5%"></td>
+                <td><a href="https://github.com/SamCharles2003/IOT-Based-Egg-Hatching-System-">GitHub</a></td>
             </tr>
 
             <tr>
-                <td>Agri Rover - An Advanced Robotic Solution for precision Farming, Real-Time Monitoring and Decision-Making to Address Detected Field Issues using IoT and ML Technologies</td>
+                <td><a href="https://drive.google.com/file/d/1Tu_E997dsvIRXbuW0QQ2rj8mQ7Jc68Wg/view?usp=sharing">Agri Rover - An Advanced Robotic Solution for precision farming, Real-Time Monitoring and Decision-Making to address detected field issues using IoT and ML Technologies</a></td>
                 <td><img src="https://drive.google.com/thumbnail?id=1g0Elg16cghsckoGMJ_AjG8LnKQ39aru4" alt="Sam Charles" style="width:auto;height:auto;border-radius:5%"></td>
+                <td><a href="https://github.com/SamCharles2003/IoT-based-Agri-rover-using-Raspberry-pi">GitHub</a></td>
             </tr>
          
             <tr>
-                <td>Smart Nav- Body Worn Assistive technology for visually Impaired Navigation</td>
+                <td><a href="https://drive.google.com/file/d/1I0Qhgd_VqCM6gfYx_xv6A2QIToTgfrGX/view?usp=sharing">Smart Nav- Body Worn Assitive technology for visually Impaired Navigation</a></td>
                 <td><img src="https://drive.google.com/thumbnail?id=1iLisvxsNU_mV4VJQm4RSoJGzSzAMoCsO" alt="Sam Charles" style="width:auto;height:auto;border-radius:5%"></td>
+                <td><a href="https://github.com/SamCharles2003/Smart-navigation-system-for-blind-people">GitHub</a></td>
             </tr>
 
             <tr>
-                <td>IoT-Enabled Francis Xavier Engineering College Bus Tracking System</td>
+                <td><a href="https://drive.google.com/file/d/1wva3q65sl2I7eDmPqNOxjbuVaxYQAVHX/view?usp=sharing">IoT-Enabled Francis Xavier Engineering College Bus tracking System</a></td>
                 <td><img src="https://drive.google.com/thumbnail?id=1g-5psKESvJU_5d8ERVWTwcOo6bBRl0R2" alt="Sam Charles" style="width:auto;height:auto;border-radius:5%"></td>
+                <td><a href="https://github.com/SamCharles2003/Bus-Tracking-System-using-ESP8266-and-Xampp-in-python">GitHub</a></td>
             </tr>
 
             <tr>
-                <td>IoT Based Women Safety Device</td>
+                <td><a href="https://drive.google.com/file/d/1B3ZfRIWsMH5hfSeE4AjwdEhpz5hUU586/view?usp=sharing">IoT Based Women Safety Device</a></td>
                 <td><img src="https://drive.google.com/thumbnail?id=1jvbQQwQySZI7YSzTpofDaOqG9Me_r0mx" alt="Sam Charles" style="width:auto;height:auto;border-radius:5%"></td>
+                <td><a href="https://github.com/SamCharles2003/Women-Safety-Device">GitHub</a></td>
             </tr>
 
             <tr>
-                <td>RFID Based Fracis Xavier Engineering College Canteen token Dispenser(Software)</td>
+                <td><a href="https://drive.google.com/file/d/14WTjMa_SnTD-ZcI2rHgO-Fw_b4lyOJ2s/view?usp=sharing">RFID Based Fracis Xavier Engineering College Canteen token Dispenser(Software)</a></td>
                 <td><img src="https://drive.google.com/thumbnail?id=1kBjgSf_T2YMzzCzW23LX3qdOUkgjgbb3" alt="Sam Charles" style="width:auto;height:auto;border-radius:5%"></td>
+                <td><a href="https://github.com/SamCharles2003/Canteen-project-for-my-college">GitHub</a></td>
             </tr>
 
             <tr>
                 <td>Cursor Movement using Hand Gestures through WebCam(Software)</td>
                 <td><img src="https://drive.google.com/thumbnail?id=1jkcXeZJlXEe7-af7robf4Gsa_kaKaedw" alt="Sam Charles" style="width:auto;height:auto;border-radius:5%"></td>
+                <td><a href="https://github.com/SamCharles2003/Cursor-Movement-using-WebCamera">GitHub</a></td>
             </tr>
-
         </table>
+
+        <h3>This site is still under updation!</h3>
 </div>
 
 
