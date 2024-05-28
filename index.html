@@ -213,8 +213,68 @@
             color: rgb(234, 0, 117);
 
           }
+
+          input {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border: 10px solid #54c0fe;
+            border-radius:20px;
+            color:black;
+            height:40px;
+            transition: transform .7s;
+            transition: box-shadow 0.3s ease-in-out; 
+           
+        }
+          button
+          {
+                background-color: #015294;
+                border: none;
+                color: #fff;
+                transition: transform .9s;
+                font-size: 1rem;
+                padding: .5rem 1rem;
+                width: 10%;  
+                margin-left: 10%;
+                border-radius: 10%;
+          }
+          input:hover,
+          button:hover
+          {
+             transform: scale(1.05);
+             transition: transform 0.3s ease-in-out;
+             box-shadow: 0 0 30px rgb(1, 34, 255);
+                
+          }
+
   
     </style>
+
+
+
+    
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-functions.js"></script>
+<script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyAV1mtmq5tZhW_nmrptfT6zhadAZD2soCU",
+        authDomain: "curriculum-vitae-b29a8.firebaseapp.com",
+        databaseURL: "https://curriculum-vitae-b29a8-default-rtdb.firebaseio.com",
+        projectId: "curriculum-vitae-b29a8",
+        storageBucket: "curriculum-vitae-b29a8.appspot.com",
+        messagingSenderId: "397834550631",
+        appId: "1:397834550631:web:c2954318411beeaf35c3c2",
+        measurementId: "G-20PBHQ0JP1"
+      };
+    
+      firebase.initializeApp(firebaseConfig);
+</script>
+
+
+<script src="script.js"></script>
+
     <body>
         <video autoplay muted loop id="myVideo">
             <source src="background_video.mp4" type="video/mp4">
@@ -559,6 +619,15 @@
                 <td><a href="https://drive.google.com/file/d/1FLGUCJNXhlEQZtxlQxMCwFzdt1D0HDIE/view?usp=sharing">Pdf</a> </td>
             </tr>
 
+        </table>
+</div>
+
+<div class="container_comm" >
+    <h1 style="font-family: 'Montserrat';">Feedback</h1>
+    <h4>-Please give your Suggestions so that I could Improvise myself. Thank You!</h4>
+    <input class="container_left" placeholder="Enter Your Feedback" id="feedback">
+    <button onclick="update()" >Submit</button>
+</div>
 
 </body>
 </head>
