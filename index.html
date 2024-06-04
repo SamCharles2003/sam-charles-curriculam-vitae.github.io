@@ -252,6 +252,46 @@
                 
           }
 
+
+         .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+          }
+          
+          /* Create four equal columns that sits next to each other */
+          .column {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+          }
+          
+          .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+          }
+          
+          /* Responsive layout - makes a two column-layout instead of four columns */
+          @media screen and (max-width: 800px) {
+            .column {
+              -ms-flex: 50%;
+              flex: 50%;
+              max-width: 50%;
+            }
+          }
+          
+          /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+          @media screen and (max-width: 600px) {
+            .column {
+              -ms-flex: 100%;
+              flex: 100%;
+              max-width: 100%;
+            }
+          }
   
     </style>
 
@@ -628,6 +668,70 @@
         </table>
 </div>
 
+<div class="container_comm">
+    <h1 style="font-family: 'Montserrat';">Intership</h1>
+
+    <div class="container_pack">
+        <p class="container_left">Company Name</p>
+        <p class="container_center">: </p>
+        <p class="container_right">Alpha Business Solution </p>
+    </div>
+
+    
+    <div class="container_pack">
+        <p class="container_left">Title</p>
+        <p class="container_center">: </p>
+        <p class="container_right">Web Development(HTML,CSS, JavaScript)</p>
+    </div>
+    
+
+    <div class="container_pack">
+        <p class="container_left">Duration</p>
+        <p class="container_center">: </p>
+        <p class="container_right">1/June/2023 - 30/June/2023</p>
+    </div>
+
+    <div class="container_pack">
+        <p class="container_left">Certificate</p>
+        <p class="container_center">: </p>
+        <p class="container_right"> <a href="https://drive.google.com/file/d/1puOaDLIpUjEvzaB85qpgmJZNk-ffMRqT/view" > Link</a></p>
+    </div>
+
+</div>
+
+
+
+
+
+<div class="container_comm" >
+    <h1 style="font-family: 'Montserrat';">Students Training Session</h1>
+    <div class="row">
+        <div class="column">
+            <img src="https://drive.google.com/thumbnail?id=1gmdFOSBXtkjNw0sxNgBqbN3WwrDuYv2M" widht="100%">
+            <img src="https://drive.google.com/thumbnail?id=1peU7yEAthOZSddSN6aDoEbNz6VOFnTZP" widht="100%">
+            <img src="https://drive.google.com/thumbnail?id=1jBidC3-AxLMzMQB0CuCj-6q0RLzVEmiZ" widht="100%">                 
+        </div>
+
+        <div class="column">
+            <img src="https://drive.google.com/thumbnail?id=1hmQmPPuQBOPrfViGQxTrh-80_dN-vqTN" widht="100%">
+            <img src="https://drive.google.com/thumbnail?id=1jFZFD8yKzKC086GMX-smoZuIbGQtOEyq" widht="100%">
+            <img src="https://drive.google.com/thumbnail?id=1j4QWGDqZR8FVMasdlxzkVo1d8O0prdqS" widht="100%">
+            <img src="https://drive.google.com/thumbnail?id=1h10DEO-54HClocNrT9ZTrp4rCCAClRCa" widht="100%">
+            <img src="https://drive.google.com/thumbnail?id=1j-ohDF2zyKUsM7h90XGntmZs3nKXGyaR" widht="100%">
+        </div>
+
+        
+        <div class="column">
+            <img src="https://drive.google.com/thumbnail?id=1oiayCoZKyGpu4gA4liuGZO9NxEbzkl-X" widht="100%">
+            <img src="https://drive.google.com/thumbnail?id=1pYEGfLrsjshX5JZbu-DQpdcWy4kRP6cg" widht="100%">
+            <img src="https://drive.google.com/thumbnail?id=1ikIIUe2Y7pa8o1rqt2Ll7I6CCa2kNZBT" widht="100%">
+            <img src="https://drive.google.com/thumbnail?id=1pg1fGBCqMJZzaubn8IEWaTRNG5yfLiLw" widht="100%">
+        </div>
+
+    </div>
+</div>
+
+              
 <div class="container_comm" >
     <h1 style="font-family: 'Montserrat';">Feedback</h1>
     <h4>-Please give your Suggestions so that I could Improvise myself. Thank You!</h4>
